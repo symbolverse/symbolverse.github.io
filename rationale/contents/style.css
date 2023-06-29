@@ -1,0 +1,29 @@
+p {
+    padding-bottom: 5em;
+}
+
+body {
+    width: 75%;
+    color: rgb(208,208,208);
+    font-family: Times New Roman, Georgia, Garamond;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    padding: 0.1em;
+    color: rgb(208,208,208);
+    border-bottom: 1px solid rgb(208,208,208);
+    margin-top: 0em;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+body {
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

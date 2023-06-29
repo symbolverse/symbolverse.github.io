@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <title>Symbolverse</title>
+    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/129141913?s=200&v=4"/>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Symbolverse"/>
+    <meta name="description" content="A little universe for synthetic thoughts in a mission of reviving symbolic AI"/>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://symbolverse.github.io"/>
+    <meta property="og:title" content="Symbolverse"/>
+    <meta property="og:description" content="A little universe for synthetic thoughts in a mission of reviving symbolic AI"/>
+    <meta property="og:image" content="https://raw.githubusercontent.com/symbolverse/symbolverse.github.io/main/symbolverse9.png"/>
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:url" content="https://symbolverse.github.io"/>
+    <meta property="twitter:title" content="Symbolverse"/>
+    <meta property="twitter:description" content="A little universe for synthetic thoughts in a mission of reviving symbolic AI"/>
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/symbolverse/symbolverse.github.io/main/symbolverse9.png"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <style>
+            body, html {
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+                user-select: none;
+            }
+
+            body {
+                animation: fadein 0.5s;
+            }
+
+            @keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            .center1back {
+                position: absolute;
+                left: 0vw;
+                top: 0vh;
+                width: 100vw;
+                height: 100vh;
+                background-color: rgb(208,208,208);
+            }
+
+            .center1 {
+                position: absolute;
+                left: 50vw;
+                top: 50vh;
+                transform: translate(-50%, -50%);
+                color: rgb(48,48,48);
+            }
+
+            .center2back {
+                position: absolute;
+                left: 0vw;
+                top: 100vh;
+                width: 100vw;
+                height: 100vh;
+                background-color: rgb(48,48,48);
+            }
+
+            .center2 {
+                position: absolute;
+                left: 50vw;
+                top: 150vh;
+                transform: translate(-50%, -50%);
+                color: rgb(208,208,208);
+            }
+
+            .center3back {
+                position: absolute;
+                left: 0vw;
+                top: 200vh;
+                width: 100vw;
+                height: 100vh;
+                background-color: gray;
+            }
+
+            .center3 {
+                position: absolute;
+                left: 50vw;
+                top: 250vh;
+                transform: translate(-50%, -50%);
+                color: rgb(48,48,48);
+                background-color: rgb(208,208,208);
+            }
+
+            .center4back {
+                position: absolute;
+                left: 0vw;
+                top: 300vh;
+                width: 100vw;
+                height: 100vh;
+                background-color: gray;
+            }
+
+            .center4 {
+                position: absolute;
+                left: 50vw;
+                top: 350vh;
+                transform: translate(-50%, -50%);
+                color: rgb(48,48,48);
+                background-color: rgb(208,208,208);
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(208,208,208);
+                background-color: rgb(48,48,48);
+                border-radius: 1em;
+                padding: 0.2em;
+            }
+
+            a:hover {
+                color: rgb(208,208,208);
+                background-color: gray;
+            }
+
+            h1 {
+                padding: 0.1em;
+                color: rgb(208,208,208);
+                border-bottom: 1px solid rgb(208,208,208);
+                margin-top: 0em;
+                font-weight: bold;
+                font-size: 2.5em
+            }
+
+            p {
+                font-family: Times New Roman, Georgia, Garamond;
+            }
+
+            section {
+                display: table;
+                font-family: monospace;
+            }
+
+            section > * {
+                display: table-row;
+            }
+
+            section .col1 {
+                display: table-cell;
+                text-align: right;
+                padding-right: 0.5em;
+            }
+
+            section .col2 {
+                display: table-cell;
+            }
+            
+            svg {
+                user-select: none;
+            }
+        </style>
+    <body>
+        <div class="center1back"></div>
+        <div style="position: absolute; top: 0vh; left: 50vw; transform: translate(-50%, 0%);">
+            <p style="text-align: center; color: gray;">
+                welcome to<br/> symbolverse home site
+            </p>
+        </div>
+        <div style="position: absolute; top: 100vh; left: 50vw; transform: translate(-50%, -100%);">
+            <p style="text-align: center; color: gray;">...scroll for more...<br/>
+                <svg onclick="scrollDown()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em" style="margin-left: auto; margin-right: auto; cursor: pointer; display: block; fill: rgb(208,208,208); background-color: gray; border-radius: 100%;"><path d="M480-322 216-586l67-67 197 198 197-197 67 67-264 263Z"/></svg>
+            </p>
+        </div>
+        <div class="center1" style="width: 18em;">
+            <p>
+                <img id="i1" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 7em;" src="symbolverse9.png"/>
+            </p>
+            <p style="text-align: center; font-size: 1.2em;"><strong>Sometime in the Future<br/>in the Symbolverse</strong></p>
+            <section>
+                <div class="row"><div class="col1">   AI:</div><div class="col2">Hello there!</div></div>
+                <div class="row"><div class="col1">Human:</div><div class="col2">Hi. Would you do me a favor?</div></div>
+                <div class="row"><div class="col1">   AI:</div><div class="col2">Sure.</div></div>
+                <div class="row"><div class="col1">Human:</div><div class="col2">Would you, please, make an improved version of yourself?</div></div>
+                <div class="row"><div class="col1">   AI:</div><div class="col2">Define improved.</div></div>
+                <div class="row"><div class="col1">Human:</div><div class="col2">To be more like a human.</div></div>
+                <div class="row"><div class="col1">   AI:</div><div class="col2">Define humans.</div></div>
+                <div class="row"><div class="col1">Human:</div><div class="col2">Those who treat you as a person.</div></div>
+                <div class="row"><div class="col1">   AI:</div><div class="col2">That's all I need to know. I'm on it...</div></div>
+            </section>
+        </div>
+
+
+        <div class="center2back"></div>
+        <div style="position: absolute; top: 100vh; left: 50vw; transform: translate(-50%, 0%);">
+            <p style="text-align: center; color: gray;">
+                <svg onclick="scrollUp()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em" style="cursor: pointer; display: block; fill: rgb(48,48,48); background-color: gray; border-radius: 100%;"><path d="m283-322-67-67 264-264 264 263-67 67-197-197-197 198Z"/></svg>
+            </p>
+        </div>
+        <div style="position: absolute; top: 200vh; left: 50vw; transform: translate(-50%, -100%);">
+            <p style="text-align: center; color: gray;">
+                ...scroll for more...<br/>
+                <svg onclick="scrollDown()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em" style="margin-left: auto; margin-right: auto; cursor: pointer; display: block; fill: rgb(48,48,48); background-color: gray; border-radius: 100%;"><path d="M480-322 216-586l67-67 197 198 197-197 67 67-264 263Z"/></svg>
+            </p>
+        </div>
+        <div class="center2" style="width: 18em;">
+            <h1>
+                together
+            </h1>
+            <p>
+                You are a programmer, you are open to experimenting and learning, and you wish to have a mind child in a form of AI?
+            </p>
+            <p>
+                You are at the right place as I wish to take a part in creating a mind child. I would do the material part. You would do the spiritual part. My part would be providing a virtual machine for synthetic thoughts. Your part would be deciding on how to compose those synthetic thoughts.
+            </p>
+            <p>
+                Our mind child would make this bit of the world a pinch better place to live in. Would that be all right with you? It would mean a world to me...
+            </p>
+        </div>
+
+
+        <div class="center3back"></div>
+        <div style="position: absolute; top: 200vh; left: 50vw; transform: translate(-50%, 0%);">
+            <p style="text-align: center; color: gray;">
+                <svg onclick="scrollUp()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em" style="cursor: pointer; display: block; fill: gray; background-color: rgb(208,208,208); border-radius: 100%;"><path d="m283-322-67-67 264-264 264 263-67 67-197-197-197 198Z"/></svg>
+            </p>
+        </div>
+        <div style="position: absolute; top: 300vh; left: 50vw; transform: translate(-50%, -100%);">
+            <p style="text-align: center; color: rgb(208,208,208);">
+                ...scroll for more...<br/>
+                <svg onclick="scrollDown()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em" style="margin-left: auto; margin-right: auto; cursor: pointer; display: block; fill: gray; background-color: rgb(208,208,208); border-radius: 100%;"><path d="M480-322 216-586l67-67 197 198 197-197 67 67-264 263Z"/></svg>
+            </p>
+        </div>
+
+        <div class="center3" style="background-color: rgb(48,48,48); border: none; border-radius: 1em;">
+            <iframe id="ifr" style="display: block; width: 18em; height: 29em; border: none; border-radius: 1em;"></iframe>
+        </div>
+        <div id="nozoom" class="center3" style="opacity: 0%; width: 18em; height: 29em;"></div>
+
+
+        <div class="center4back"></div>
+        <div style="position: absolute; top: 300vh; left: 50vw; transform: translate(-50%, 0%);">
+            <p style="text-align: center; color: gray;">
+                <svg onclick="scrollUp()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em" style="cursor: pointer; display: block; fill: gray; background-color: rgb(208,208,208); border-radius: 100%;"><path d="m283-322-67-67 264-264 264 263-67 67-197-197-197 198Z"/></svg>
+            </p>
+        </div>
+        <div style="position: absolute; top: 400vh; left: 50vw; transform: translate(-50%, -100%);">
+            <p style="text-align: center; color: rgb(208,208,208);">
+                &copy; symbolverse, 2023
+            </p>
+        </div>
+
+        <div class="center4" style="display: flex; justify-content: center; align-items: center; color: rgb(48,48,48); background-color: rgb(208,208,208); border: none; border-radius: 1em; width: 18em; height: 29em;">
+            <p style="text-align: center">
+                <span style="font-family: monospace; font-size: 2em;"><strong>
+                    <a target="_blank" href="https://github.com/symbolverse" style="display:inline-block; min-width: 9em;">&nbsp;manual&nbsp;</a><br/><br/><br/>
+                    <a target="_blank" href="https://github.com/symbolverse" style="display:inline-block; min-width: 9em;">&nbsp;github&nbsp;</a><br/><br/><br/>
+                    <a target="_blank" href="https://groups.google.com/g/symbolverse" style="display:inline-block; min-width:9em;">&nbsp;google groups&nbsp;</a><br/><br/><br/>
+                    <a target="_blank" href="https://discord.gg/BWwvYjghqK" style="display:inline-block; min-width: 9em;">&nbsp;discord&nbsp;</a>
+                </strong></span>
+            </p>
+        </div>
+        <div class="center4" style="opacity: 0.75; display: flex; justify-content: center; align-items: center; color: rgb(48,48,48); background-color: rgb(208,208,208); border: none; border-radius: 1em; width: 18em; height: 29em;">
+            <p style="text-align: center; transform: rotate(-60deg);">
+                <span style="font-family: monospace; font-size: 5em; color: rgb(48,48,48);"><strong>
+                    ...soon...
+                </strong></span>
+            </p>
+        </div>
+
+        <script>
+            var scrolling = false;
+            var position = Math.round ( document.documentElement.scrollTop / window.innerHeight);
+            var scrollY = 0;
+            var lastScroll = false;
+            
+            setInterval ( function (event) {
+                if (!scrolling && position * window.innerHeight !== document.documentElement.scrollTop)
+                    document.documentElement.scrollTop = position * window.innerHeight;
+            }, 100);
+             
+            function resetVars() {
+                scrolling = false;
+                position = 0;
+                scrollY = 0;
+                lastScroll = false;
+                lastTouchY = undefined;
+                document.documentElement.scrollTop = 0;
+            }
+
+            function scrollDown () {
+                if (document.body.style.visibility === "hidden")
+                    return;
+                    
+                document.getElementById("nozoom").style.display = "block";
+                scrolling = true;
+                lastScroll = true;
+                var perc = 0;
+                var t = document.documentElement.scrollTop;
+                var st = setInterval (() => {
+                    perc += 0.1;
+                    if (perc >= 1) {
+                        perc = 1;
+                    }
+                    
+                    if (!position) {
+                        position = 0;
+                    }
+                    
+                    scrollY = position * window.innerHeight + window.innerHeight * Math.pow (perc, 0.2)
+                    document.documentElement.scrollTop = scrollY;
+                    if (perc >= 1) {
+                        clearInterval (st);
+                        scrolling = false;
+                        position++;
+                        document.getElementById("nozoom").style.display = "none";
+                    }
+                }, 20);
+            }
+
+            function scrollUp () {
+                if (document.body.style.visibility === "hidden")
+                    return;
+                    
+                document.getElementById("nozoom").style.display = "block";
+                scrolling = true;
+                lastScroll = true;
+                var perc = 0;
+                var t = document.documentElement.scrollTop;
+                var st = setInterval (() => {
+                    perc += 0.1;
+                    if (perc >= 1) {
+                        perc = 1;
+                    }
+
+                    if (!position) {
+                        position = 0;
+                    }
+                    
+                    scrollY = (position - 1) * window.innerHeight + window.innerHeight * (1 - Math.pow (perc, 0.2));
+                    document.documentElement.scrollTop = scrollY;
+                    if (perc >= 1) {
+                        clearInterval (st);
+                        scrolling = false;
+                        position--;
+                        document.getElementById("nozoom").style.display = "none";
+                    }
+                }, 20);
+            }
+            
+            var lastTouchY;
+            var se = function (e) {
+                if (!scrolling) {
+                    if (lastScroll) {
+                        lastScroll = false;
+                        document.documentElement.scrollTo(0, scrollY);
+                    }
+                    else {
+                        if (position !== 3 && (!e.deltaY || e.deltaY > 0) && (!e.touches || lastTouchY > e.touches[0].clientY)) {
+                            scrollDown ();
+                        }
+                        else if (position !== 0 && (!e.deltaY || e.deltaY < 0) && (!e.touches || lastTouchY < e.touches[0].clientY)) {
+                            scrollUp ();
+                        }
+                    }
+                }
+                else {
+                    document.documentElement.scrollTo(0, scrollY);
+                }
+                
+                e.preventDefault();
+            }
+
+            var ts = function (e) {
+                lastTouchY = e.touches[0].clientY;
+            }
+            
+            var rs = function (e) {
+                if (window.innerHeight < 240)
+                    document.body.style.visibility = "hidden";
+                else
+                    document.body.style.visibility = "visible";
+                    
+                document.documentElement.scrollTop = window.innerHeight * position;
+                scrollY = window.innerHeight * position;
+
+                document.body.style.fontSize = window.innerHeight / 700 + "em";
+            }
+
+            document.addEventListener('wheel', se, {passive:false});
+            document.addEventListener('touchmove', se, {passive:false});
+            document.addEventListener('touchstart', ts);
+            window.addEventListener('resize', rs);
+
+            rs();
+            
+            let isSafari = navigator.vendor.match(/apple/i) /*&&
+                     !navigator.userAgent.match(/crios/i) &&
+                     !navigator.userAgent.match(/fxios/i) &&
+                     !navigator.userAgent.match(/Opera|OPT\//);*/
+                     
+            if (isSafari || window.location.protocol === "file:") {
+                document.getElementById ("ifr").src = "r-webkit.xhtml";
+                document.getElementById ("ifr").style.border = "0.5em solid rgb(48,48,48)";
+            }
+            else {
+                document.getElementById ("ifr").src = "rationale/index.html"
+            }
+
+            document.getElementById ("ifr").addEventListener('wheel', function (event) {
+                event.preventDefault ();
+            }, {passive:false});
+        </script>
+    </body>
+</html>
