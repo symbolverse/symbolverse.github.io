@@ -271,13 +271,13 @@
 
         <script>
             var scrolling = false;
-            var position = Math.round ( document.documentElement.scrollTop / window.innerHeight);
+            var position = Math.round ( document.documentElement.scrollTop / document.body.clientHeight);
             var scrollY = 0;
             var lastScroll = false;
             
             setInterval ( function (event) {
-                if (!scrolling && position * window.innerHeight !== document.documentElement.scrollTop)
-                    document.documentElement.scrollTop = position * window.innerHeight;
+                if (!scrolling && position * document.body.clientHeight !== document.documentElement.scrollTop)
+                    document.documentElement.scrollTop = position * document.body.clientHeight;
             }, 100);
              
             function resetVars() {
@@ -308,7 +308,7 @@
                         position = 0;
                     }
                     
-                    scrollY = position * window.innerHeight + window.innerHeight * Math.pow (perc, 0.2)
+                    scrollY = position * document.body.clientHeight + document.body.clientHeight * Math.pow (perc, 0.2)
                     document.documentElement.scrollTop = scrollY;
                     if (perc >= 1) {
                         clearInterval (st);
@@ -338,7 +338,7 @@
                         position = 0;
                     }
                     
-                    scrollY = (position - 1) * window.innerHeight + window.innerHeight * (1 - Math.pow (perc, 0.2));
+                    scrollY = (position - 1) * document.body.clientHeight + document.body.clientHeight * (1 - Math.pow (perc, 0.2));
                     document.documentElement.scrollTop = scrollY;
                     if (perc >= 1) {
                         clearInterval (st);
@@ -377,15 +377,15 @@
             }
             
             var rs = function (e) {
-                if (window.innerHeight < 240)
+                if (document.body.clientHeight < 240)
                     document.body.style.visibility = "hidden";
                 else
                     document.body.style.visibility = "visible";
                     
-                document.documentElement.scrollTop = window.innerHeight * position;
-                scrollY = window.innerHeight * position;
+                document.documentElement.scrollTop = document.body.clientHeight * position;
+                scrollY = document.body.clientHeight * position;
 
-                document.body.style.fontSize = window.innerHeight / 700 + "em";
+                document.body.style.fontSize = document.body.clientHeight / 700 + "em";
             }
 
             document.addEventListener('wheel', se, {passive:false});
