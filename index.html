@@ -169,7 +169,7 @@
             </p>
         </div>
         <div style="position: absolute; top: 100%; left: 50%; transform: translate(-50%, -100%);">
-            <p style="text-align: center; color: gray;">...scroll for more...<br/>
+            <p style="text-align: center; color: gray;">
                 <svg onclick="scrollDown()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em" style="margin-left: auto; margin-right: auto; cursor: pointer; display: block; fill: rgb(208,208,208); background-color: gray; border-radius: 100%;"><path d="M480-322 216-586l67-67 197 198 197-197 67 67-264 263Z"/></svg>
             </p>
         </div>
@@ -200,7 +200,6 @@
         </div>
         <div style="position: absolute; top: 200%; left: 50%; transform: translate(-50%, -100%);">
             <p style="text-align: center; color: gray;">
-                ...scroll for more...<br/>
                 <svg onclick="scrollDown()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em" style="margin-left: auto; margin-right: auto; cursor: pointer; display: block; fill: rgb(48,48,48); background-color: gray; border-radius: 100%;"><path d="M480-322 216-586l67-67 197 198 197-197 67 67-264 263Z"/></svg>
             </p>
         </div>
@@ -228,7 +227,6 @@
         </div>
         <div style="position: absolute; top: 300%; left: 50%; transform: translate(-50%, -100%);">
             <p style="text-align: center; color: rgb(208,208,208);">
-                ...scroll for more...<br/>
                 <svg onclick="scrollDown()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em" style="margin-left: auto; margin-right: auto; cursor: pointer; display: block; fill: gray; background-color: rgb(208,208,208); border-radius: 100%;"><path d="M480-322 216-586l67-67 197 198 197-197 67 67-264 263Z"/></svg>
             </p>
         </div>
@@ -385,7 +383,7 @@
                 document.documentElement.scrollTop = document.body.clientHeight * position;
                 scrollY = document.body.clientHeight * position;
 
-                document.body.style.fontSize = document.body.clientHeight / 620 + "em";
+                document.body.style.fontSize = document.body.clientHeight / 590 + "em";
             }
 
             document.addEventListener('wheel', se, {passive:false});
