@@ -233,7 +233,7 @@
         </div>
 
         <div class="center3" style="background-color: rgb(48,48,48); border: none; border-radius: 1em;">
-            <iframe id="ifr" style="display: block; width: 17.5em; height: 28.5em; border: none; border-radius: 1em; border: 0.25em solid rgb(48,48,48);"></iframe>
+            <iframe id="ifr" style="display: block; width: 17.5em; height: 28.5em; border-radius: 1em; border: 0.25em solid rgb(48,48,48);"></iframe>
         </div>
         <div id="nozoom" class="center3" style="opacity: 0%; width: 18em; height: 29em; display: none;"></div>
 
@@ -402,9 +402,9 @@
             if (true || isSafari || window.location.protocol === "file:") {
                 document.getElementById ("ifr").src = "r-webkit.xhtml";
                 //document.getElementById ("ifr").style.border = "0.25em solid rgb(48,48,48)";
-                //document.getElementById ("ifr").style.margin = "0.25em";
             }
             else {
+                document.getElementById ("ifr").style.border = "none";
                 document.getElementById ("ifr").src = "rationale/index.html"
             }
 
