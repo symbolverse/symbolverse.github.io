@@ -177,6 +177,7 @@
             <p>
                 <img id="i1" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 7em;" src="symbolverse9.png"/>
             </p>
+            <br/>
             <p style="text-align: center; font-size: 1.2em;"><strong>Sometime in the Future<br/>in the Symbolverse</strong></p>
             <section>
                 <div class="row"><div class="col1">   AI:</div><div class="col2">Hello there!</div></div>
@@ -232,9 +233,9 @@
         </div>
 
         <div class="center3" style="background-color: rgb(48,48,48); border: none; border-radius: 1em;">
-            <iframe id="ifr" style="display: block; width: 18em; height: 29em; border: none; border-radius: 1em;"></iframe>
+            <iframe id="ifr" style="display: block; width: 17.5em; height: 28.5em; border: none; border-radius: 1em; border: 0.25em solid rgb(48,48,48);"></iframe>
         </div>
-        <div id="nozoom" class="center3" style="opacity: 0%; width: 18em; height: 29em;"></div>
+        <div id="nozoom" class="center3" style="opacity: 0%; width: 18em; height: 29em; display: none;"></div>
 
 
         <div class="center4back"></div>
@@ -245,14 +246,14 @@
         </div>
         <div style="position: absolute; top: 400%; left: 50%; transform: translate(-50%, -100%);">
             <p style="text-align: center; color: rgb(208,208,208);">
-                &copy; symbolverse, 2023
+                &copy; 2023 Symbolverse
             </p>
         </div>
 
         <div class="center4" style="display: flex; justify-content: center; align-items: center; color: rgb(48,48,48); background-color: rgb(208,208,208); border: none; border-radius: 1em; width: 18em; height: 29em;">
             <p style="text-align: center">
                 <span style="font-family: monospace; font-size: 2em;"><strong>
-                    <a target="_blank" href="https://github.com/symbolverse" style="display:inline-block; min-width: 9em;">&nbsp;manual&nbsp;</a><br/><br/><br/>
+                    <a target="_blank" href="https://github.com/symbolverse/reasoner.js/blob/master/draft/reasoner.md" style="display:inline-block; min-width: 9em;">&nbsp;manual&nbsp;</a><br/><br/><br/>
                     <a target="_blank" href="https://github.com/symbolverse" style="display:inline-block; min-width: 9em;">&nbsp;github&nbsp;</a><br/><br/><br/>
                     <a target="_blank" href="https://groups.google.com/g/symbolverse" style="display:inline-block; min-width:9em;">&nbsp;google groups&nbsp;</a><br/><br/><br/>
                     <a target="_blank" href="https://discord.gg/BWwvYjghqK" style="display:inline-block; min-width: 9em;">&nbsp;discord&nbsp;</a>
@@ -398,9 +399,10 @@
                      !navigator.userAgent.match(/fxios/i) &&
                      !navigator.userAgent.match(/Opera|OPT\//);*/
                      
-            if (isSafari || window.location.protocol === "file:") {
+            if (true || isSafari || window.location.protocol === "file:") {
                 document.getElementById ("ifr").src = "r-webkit.xhtml";
-                document.getElementById ("ifr").style.border = "0.5em solid rgb(48,48,48)";
+                //document.getElementById ("ifr").style.border = "0.25em solid rgb(48,48,48)";
+                //document.getElementById ("ifr").style.margin = "0.25em";
             }
             else {
                 document.getElementById ("ifr").src = "rationale/index.html"
