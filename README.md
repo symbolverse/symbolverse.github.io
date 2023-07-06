@@ -1,2 +1,2 @@
-# symbolverse.github.io
+# synchroverse.github.io
 Home site for the Synchroverse project
