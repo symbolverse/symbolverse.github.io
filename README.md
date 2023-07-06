@@ -1,2 +1,3 @@
-# synchroverse.github.io
-Home site for the Synchroverse project
+# synchro-verse.github.io
+
+Home site for the Synchro-verse project
