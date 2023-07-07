@@ -1,3 +1,3 @@
-# synchro-verse.github.io
+# mind-child.github.io
 
-Home site for the Synchro-verse project
+Home site for the mind-child project
