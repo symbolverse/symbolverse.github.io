@@ -84,13 +84,19 @@
                 width: 100%;
                 height: 100%;
                 background-color: gray;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             .center3 {
+                /*
                 position: absolute;
                 left: 50%;
                 top: 250%;
                 transform: translate(-50%, -50%);
+                */
                 color: rgb(48,48,48);
                 background-color: rgb(208,208,208);
             }
@@ -222,7 +228,12 @@
         </div>
 
 
-        <div class="center3back"></div>
+        <div class="center3back">
+        <div class="center3" style="background-color: rgb(48,48,48); border: none; border-radius: 1em;">
+            <iframe id="ifr" src="rationale.html" style="display: block; width: 17.5em; height: 28.5em; border-radius: 1em; border: 0.25em solid rgb(48,48,48);"></iframe>
+        </div>
+        <div id="nozoom" class="center3" style="margin-left: -17.5em; opacity: 0%; width: 17.5em; height: 28.5em; display: none;"></div>
+        </div>
         <div style="position: absolute; top: 200%; left: 50%; transform: translate(-50%, 0%);">
             <p style="text-align: center; color: gray;">
                 <svg onclick="scrollUp()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em" style="cursor: pointer; display: block; fill: gray; background-color: rgb(208,208,208); border-radius: 100%;"><path d="m283-322-67-67 264-264 264 263-67 67-197-197-197 198Z"/></svg>
@@ -233,12 +244,6 @@
                 <svg onclick="scrollDown()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em" style="margin-left: auto; margin-right: auto; cursor: pointer; display: block; fill: gray; background-color: rgb(208,208,208); border-radius: 100%;"><path d="M480-322 216-586l67-67 197 198 197-197 67 67-264 263Z"/></svg>
             </p>
         </div>
-
-        <div class="center3" style="background-color: rgb(48,48,48); border: none; border-radius: 1em;">
-            <iframe id="ifr" src="rationale.html" style="display: block; width: 17.5em; height: 28.5em; border-radius: 1em; border: 0.25em solid rgb(48,48,48);"></iframe>
-        </div>
-        <div id="nozoom" class="center3" style="opacity: 0%; width: 18em; height: 29em; display: none;"></div>
-
 
         <div class="center4back"></div>
         <div style="position: absolute; top: 300%; left: 50%; transform: translate(-50%, 0%);">
